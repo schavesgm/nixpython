@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nixpython"
+version = "0.1.0"
+description = "Example CUDA-accelerated project to use alongside `devenv`"
+readme = "README.md"
+requires-python = ">= 3.11"
+dependencies = [
+  "jax[cuda12] == 0.4.38",
+  "numpy == 2.1.2",
+]
